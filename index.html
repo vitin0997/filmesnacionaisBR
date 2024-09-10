@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes Nacionais Brasileiros</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #005b96; /* Azul Brasil */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .banner {
+            position: relative;
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .banner img {
+            width: 300px;
+            height: 450px;
+            object-fit: cover;
+            transition: opacity 0.3s;
+        }
+        .banner:hover img {
+            opacity: 0.7;
+        }
+        .banner:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+        }
+        footer {
+            background-color: #f7b733; /* Amarelo Brasil */
+            color: #333;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0,0,0,0.3);
+        }
+        .banner-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+        .banner:hover .banner-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Filmes Nacionais Brasileiros</h1>
+    </header>
+
+    <div class="container">
+        <div class="banner" onclick="window.open('https://www.google.com/search?q=Filme+1+site:google.com', '_blank')">
+            <img src="https://via.placeholder.com/300x450.png?text=Filme+1" alt="Filme 1">
+            <div class="banner-overlay">Filme 1</div>
+        </div>
+        <div class="banner" onclick="window.open('https://www.google.com/search?q=Filme+2+site:google.com', '_blank')">
+            <img src="https://via.placeholder.com/300x450.png?text=Filme+2" alt="Filme 2">
+            <div class="banner-overlay">Filme 2</div>
+        </div>
+        <div class="banner" onclick="window.open('https://www.google.com/search?q=Filme+3+site:google.com', '_blank')">
+            <img src="https://via.placeholder.com/300x450.png?text=Filme+3" alt="Filme 3">
+            <div class="banner-overlay">Filme 3</div>
+        </div>
+        <div class="banner" onclick="window.open('https://www.google.com/search?q=Filme+4+site:google.com', '_blank')">
+            <img src="https://via.placeholder.com/300x450.png?text=Filme+4" alt="Filme 4">
+            <div class="banner-overlay">Filme 4</div>
+        </div>
+        <div class="banner" onclick="window.open('https://www.google.com/search?q=Filme+5+site:google.com', '_blank')">
+            <img src="https://via.placeholder.com/300x450.png?text=Filme+5" alt="Filme 5">
+            <div class="banner-overlay">Filme 5</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Filmes Nacionais Brasileiros. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
